@@ -1,0 +1,8 @@
+$brand-color: #6D7645;
+
+$heading-color: $brand-color;
+$subheading-color: lighten($heading-color, 25%);
+
+$link-color: $brand-color;
+$link-hover-color: darken($link-color, 50%);
+$component-active-color: gray;

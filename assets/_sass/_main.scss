@@ -1,4 +1,17 @@
 main {
+
+  a, a:visited {
+    color: $link-color;
+  }
+
+  a:hover {
+    color: $link-hover-color;
+  }
+
+  a:active {
+    color: $component-active-color;
+  }
+
   hr { margin: 80px 0; }
   section { overflow: hidden; }
 
@@ -11,6 +24,7 @@ main {
   }
 
   h2 {
+    color: $heading-color;
     font-size: 50px;
     span { @extend .text-muted; }
   }

@@ -3,4 +3,42 @@ nav {
 	button { @extend .navbar-toggle; }
 	#menu { @extend .collapse, .navbar-collapse; }
   ul { @extend .nav, .navbar-nav; }
+
+  background-color: #fff;
+
+  border: 0;
+
+  .navbar-brand {
+    color: $link-color !important;
+  }
+
+  .navbar-brand:hover {
+    color: $link-hover-color;
+  }
+
+  .navbar-brand:active {
+    color: $component-active-color;
+  }
+
+  ul.nav li a, ul.nav li a:visited {
+    color: $link-color;
+  }
+
+  ul.nav li a:hover, ul.nav li {
+    color: $link-hover-color;
+  }
+
+  ul.nav li.active a:active {
+    color: $component-active-color;
+  }
+
+  button {
+    border-color: $brand-color;
+  }
+
+  button .icon-bar {
+    background-color: $brand-color;
+  }
+
 }
+

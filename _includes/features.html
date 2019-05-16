@@ -3,10 +3,17 @@
     <hr id='{{ feature.id }}'>
 
     <section>
+    {% if feature.heading == "Registry" %}
+      <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
+      <div class='lead'>{{ feature.content }}</div> 
+      <a class="zola-registry-embed" href="https://www.zola.com/registry/mikeandbeccaseptember7" data-registry-key="mikeandbeccaseptember7">Our Zola Wedding Registry</a><script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+    {% else %} 
       <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image }}'>
       <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
-      <div class='lead'>{{ feature.content }}</div>
+      <div class='lead'>{{ feature.content }}</div> 
+    {% endif %}
     </section>
+
   {% endfor %}
 
   <hr>
